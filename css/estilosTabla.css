@@ -1,0 +1,85 @@
+/* estilosTabla.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #47855b;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+table.striped-hover {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+table.striped-hover thead {
+    background-color: #b0f2c2;
+    color: #fff;
+    text-align: left;
+}
+
+table.striped-hover th,
+table.striped-hover td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+table.striped-hover tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+table.striped-hover tbody tr:hover {
+    background-color: #cce5ff;
+}
+
+button {
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+table.striped-hover,
+table.striped-hover th,
+table.striped-hover td {
+    border: 1px solid #333;
+}
+.acciones-enlaces {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+.volver {
+    color: #00ff80;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.volver:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.btn-volver {
+    color: #00ff80;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.btn-volver:hover {
+    text-decoration: underline;
+    color: white;
+}

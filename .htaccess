@@ -1,0 +1,12 @@
+# Evitar acceso directo a archivos sensibles
+<FilesMatch "\.(ini|log|sql|env|sh)$">
+  Require all denied
+</FilesMatch>
+
+# Bloquear listado de directorios
+Options -Indexes
+
+# Forzar HTTPS (si ya tienes certificado SSL en Hostinger)
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]

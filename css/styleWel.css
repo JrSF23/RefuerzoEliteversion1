@@ -1,0 +1,234 @@
+body {
+    background-color: #47855b;
+    background-image: url("../images/Logotipo1-removebg-preview1.png");
+    background-size: contain; /* Makes the image cover the whole background */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image */
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 16px;
+}
+
+.inputBus input:hover {
+    border: 1px solid #00ff80;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    font-size: 25px;
+}
+
+a {
+    color: #00ff80;
+    /* font-family: "Courier New", Courier, monospace; */
+    font-weight: bold;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+a:hover {
+    color: white;
+    /* cursor: pointer; */
+}
+
+/* header { */
+/* display: flex; */
+/* align-items: center; */
+/* justify-content: center; */
+/* gap: 20px; */
+/* } */
+
+nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu-btn {
+    background: transparent;
+    border: none;
+    font-size: 28px;
+    color: #00ff80;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.menu-btn:hover {
+    color: white;
+}
+
+.logo {
+    margin-right: auto;
+    display: inline-block;
+    position: relative;
+}
+
+.nav {
+    margin-right: 200px;
+    margin-left: 380px;
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    /* justify-content: center; */
+}
+
+h1 {
+    text-align: center;
+    color: #a0e2b3;
+}
+
+.inputBus {
+    position: relative;
+    width: 300px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.inputBus input {
+    width: 100%;
+    padding: 10px 10px 10px 15px;
+    border: none;
+    border-radius: 25px;
+    background-color: #d3f8dc;
+    color: #47855b;
+    font-size: 16px;
+    margin-top: 70px;
+}
+
+.inputBus .icon {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #00ff80;
+    cursor: pointer;
+    padding: 0;
+    margin-top: 35px;
+    transition: color 0.2s ease;
+}
+
+.inputBus .icon:active {
+    color: white;
+}
+
+.inputBus .icon:hover {
+    color: white;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+.footer a {
+    display: flex;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-inline-end: auto;
+}
+
+.menu-btn {
+    background: transparent;
+    border: none;
+    font-size: 30px;
+    color: #00ff80;
+    cursor: pointer;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.menu-btn:hover {
+    color: white;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-wrapper {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: #47855b;
+    border: 1px solid #00ff80;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    min-width: 150px;
+}
+
+.dropdown-menu a {
+    color: #00ff80;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+    background-color: #00ff80;
+    color: black;
+    border-radius: 4px;
+}
+
+.hidden {
+    display: none;
+}
+h3 {
+    text-align: center;
+    width: 100%;
+    margin: 20px 0;
+}
+.bienvenida {
+    font-size: 16px;
+    color: #00ff80;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: aparecer 1.5s ease-out forwards;
+}
+@keyframes aparecer {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.int {
+    text-align: center;
+}
+.int::placeholder {
+    text-align: center;
+}
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #00ff80;
+    font-size: 14px;
+    margin-top: 5px;
+}

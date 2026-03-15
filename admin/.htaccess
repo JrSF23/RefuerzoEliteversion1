@@ -1,0 +1,13 @@
+# Activar mod_rewrite
+RewriteEngine On
+
+# Redirigir al login si no hay sesión activa
+# (usa tu propio script PHP de control)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ verificar.php [L]
+
+# Bloquear acceso directo a archivos sensibles
+<FilesMatch "\.(ini|log|sql|env|sh)$">
+  Require all denied
+</FilesMatch>

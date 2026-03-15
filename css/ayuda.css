@@ -1,0 +1,88 @@
+/* word-style.css */
+body {
+    background: #e9ecef;
+    min-height: 100vh;
+    margin: 0;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.documento-word {
+    background: #fff;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 48px 56px;
+    border-radius: 8px;
+    box-shadow: 0 4px 32px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+p,
+ul,
+ol {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    line-height: 1.7;
+    font-size: 1.1em;
+    max-width: 90%;
+}
+
+ul,
+ol {
+    padding-left: 0;
+    list-style-position: inside;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .documento-word {
+        padding: 16px 4vw;
+    }
+
+    p,
+    ul,
+    ol {
+        font-size: 1em;
+        max-width: 100%;
+    }
+}
+.volver {
+    display: block;
+    text-align: center;
+    color: rgb(0, 255, 60);
+    text-decoration: none;
+    margin-top: 24px;
+    font-size: 1.1em;
+}
+
+.volver:hover {
+    text-decoration: underline;
+    color: green;
+}
+a {
+    color: rgb(12, 230, 139);
+    text-decoration: none;
+}
