@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (secretClicks === 7) {
                 // abrir en nueva pestaña
                 window.open(
-                    "http://www.localhost/Refuerzo_Elite-Project/Interface/php/formularioLog.php",
+                    "http://www.localhost/Refuerzo_Elite-Project/admin/formularioLog.php",
                     "_blank"
                 );
                 secretClicks = 0;
